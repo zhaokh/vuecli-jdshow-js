@@ -1,25 +1,23 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <div>
-      <p>
-        If Element is successfully added to this project, you'll see an
-        <code v-text="'<el-button>'"></code>
-        below
-      </p>
-      <el-button>el-button</el-button>
+    <div id="nav">
+      <router-link to="/">主页</router-link> | 
+      <router-link to="/jdshow">京东秀</router-link> |      
+      <router-link to="/about">关于</router-link>
     </div>
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <router-view/>
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import JDData from './components/JDData.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    HelloWorld,
+    JDData
   }
 }
 </script>
@@ -32,5 +30,11 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+#nav{
+    background-color: #E9EEF3;
+    color: #333;
+    text-align: center;
+    line-height: 60px;
 }
 </style>
