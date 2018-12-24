@@ -1,5 +1,5 @@
 <template>
-  <div class="jdshow">
+  <div>
     <h1>京东数据分析</h1>
     <JDData msg="种类"></JDData>
   </div>

@@ -1,20 +1,21 @@
 <template>
   <div class="jddata">
-  <template>
-    <el-table
-      :data="items"
-      style="width: 100%">
-      <el-table-column
-        prop="name"
-        label="数据类型"
-        width="180">
-      </el-table-column>
-      <el-table-column
-        prop="count"
-        label="数据量">
-      </el-table-column>
-    </el-table>
-  </template>
+    <template>
+      <el-table
+        :data="items"
+        style="width: 60%">
+        <el-table-column
+          prop="name"
+          label="数据类型"
+          width="180">
+        </el-table-column>
+        <el-table-column
+          prop="count"
+          label="数据量"
+          width="180">
+        </el-table-column>
+      </el-table>
+    </template>
     <el-button @click="getdata">获取</el-button>
   </div>
 </template>

@@ -2,7 +2,8 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">主页</router-link> | 
-      <router-link to="/jdshow">京东秀</router-link> |      
+      <router-link to="/jdshow">京东秀</router-link> |  
+      <router-link to="/threeshow">3D Show</router-link> |    
       <router-link to="/about">关于</router-link>
     </div>
     <router-view/>

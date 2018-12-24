@@ -19,6 +19,11 @@ export default new Router({
       component:()=>import('./views/JDshow.vue')
     },
     {
+      path:'/threeshow',
+      name:'threeshow',
+      component:()=>import('./views/ThreeShow.vue')
+    },    
+    {
       path: '/about',
       name: 'about',
       // route level code-splitting
