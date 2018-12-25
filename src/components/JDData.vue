@@ -1,21 +1,21 @@
 <template>
   <div class="jddata">
-    <template>
-      <el-table
-        :data="items"
-        style="width: 60%">
-        <el-table-column
-          prop="name"
-          label="数据类型"
-          width="180">
-        </el-table-column>
-        <el-table-column
-          prop="count"
-          label="数据量"
-          width="180">
-        </el-table-column>
-      </el-table>
-    </template>
+    <el-table
+      :data="items"
+      style="width: 100%">
+      <el-table-column
+        prop="name"
+        label="数据类型"
+        height="60"
+        width="180">
+      </el-table-column>
+      <el-table-column
+        prop="count"
+        label="数据量"
+        height="60"
+        width="180">
+      </el-table-column>
+    </el-table>
     <el-button @click="getdata">获取</el-button>
   </div>
 </template>
@@ -66,20 +66,4 @@ export default {
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
-</style>
+

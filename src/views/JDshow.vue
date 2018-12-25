@@ -1,18 +1,32 @@
 <template>
   <div>
-    <h1>京东数据分析</h1>
-    <JDData msg="种类"></JDData>
+    <el-container>
+      <el-aside width="400px">
+        <JDData msg="种类"></JDData>
+      </el-aside>
+      <el-container>
+        <el-header>
+          京东数据分析
+        </el-header>
+        <el-main>
+          <JDSearch></JDSearch>
+        </el-main>
+        <el-footer>Footer</el-footer>
+      </el-container>
+    </el-container>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import JDData from '@/components/JDData.vue'
+import JDSearch from '@/components/JDSearch.vue'
 
 export default {
   name: 'JDshow',
   components: {
-    JDData
+    JDData,
+    JDSearch
   }
 }
 </script>
@@ -29,14 +43,12 @@ export default {
     background-color: #D3DCE6;
     color: #333;
     text-align: center;
-    line-height: 200px;
   }
   
   .el-main {
     background-color: #E9EEF3;
     color: #333;
     text-align: center;
-    line-height: 160px;
   }
   
   body > .el-container {
